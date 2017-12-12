@@ -5,25 +5,24 @@
     ],
     "config": {
         "network-interface":{
-            "help": "options are ETHERNET, WIFI_ESP8266, WIFI_ODIN, WIFI_IDW01M1, WIFI_RTW, MESH_LOWPAN_ND, MESH_THREAD",
-            "value": "ETHERNET"
-        },
-        "esp8266-tx": {
-            "help": "Pin used as TX (connects to ESP8266 RX)",
-            "value": "PTD3"
-        },
-        "esp8266-rx": {
-            "help": "Pin used as RX (connects to ESP8266 TX)",
-            "value": "PTD2"
-        },
-        "esp8266-debug": {
-            "value": true
+            "help": "Options are ETHERNET, WIFI_ESP8266, WIFI_ISM43362, WIFI_ODIN, MESH_LOWPAN_ND, MESH_THREAD",
+            "value": "WIFI_ISM43362"
         },
         "wifi-ssid": {
-            "value": "\"SSID\""
+            "help": "WiFi SSID",
+            "value": "\"AndroidAPmel\""
         },
         "wifi-password": {
-            "value": "\"Password\""
+            "help": "WiFi Password",
+            "value": "\"truc1234\""
+        },
+        "wifi-tx": {
+            "help": "TX pin for serial connection to external device",
+            "value": "D1"
+        },
+        "wifi-rx": {
+            "help": "RX pin for serial connection to external device",
+            "value": "D0"
         }
     },
     "target_overrides": {
