@@ -1,5 +1,6 @@
 {
     "macros": [
+        "MBED_MEM_TRACING_ENABLED",
         "MBED_CONF_APP_MAIN_STACK_SIZE=4096",
         "MBEDTLS_USER_CONFIG_FILE=\"mbedtls_entropy_config.h\""
     ],
@@ -10,11 +11,11 @@
         },
         "wifi-ssid": {
             "help": "WiFi SSID",
-            "value": "\"AndroidAPmel\""
+            "value": "\"TP-LINK_4EA4\""
         },
         "wifi-password": {
             "help": "WiFi Password",
-            "value": "\"truc1234\""
+            "value": "\"20892890\""
         },
         "wifi-tx": {
             "help": "TX pin for serial connection to external device",

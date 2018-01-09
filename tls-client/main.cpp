@@ -30,7 +30,7 @@
  */
 
 /* Change to a number between 1 and 4 to debug the TLS connection */
-#define DEBUG_LEVEL 0
+#define DEBUG_LEVEL 1
 
 #include "mbed.h"
 #include "easy-connect.h"
@@ -40,6 +40,7 @@
 #include "mbedtls/entropy.h"
 #include "mbedtls/ctr_drbg.h"
 #include "mbedtls/error.h"
+#include "mbed_mem_trace.h"
 
 #if DEBUG_LEVEL > 0
 #include "mbedtls/debug.h"
@@ -416,6 +417,7 @@ int main() {
      * cause the other party to time out. */
 
     printf("\nStarting mbed-os-example-tls/tls-client\n");
+//    mbed_mem_trace_set_callback(mbed_mem_trace_default_callback);
 #if defined(MBED_MAJOR_VERSION)
     printf("Using Mbed OS %d.%d.%d\n", MBED_MAJOR_VERSION, MBED_MINOR_VERSION, MBED_PATCH_VERSION);
 #else
